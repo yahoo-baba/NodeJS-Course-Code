@@ -1,0 +1,18 @@
+{
+  "name": "session-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,1 @@
+If you want to run the code of "crud-api-project" then first run this command "npm install" in terminal to get missing "node_modules" folder.
