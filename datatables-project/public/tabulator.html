@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabulator Tables</title>
+  <link href="https://unpkg.com/tabulator-tables@6.3.1/dist/css/tabulator.min.css" rel="stylesheet">
+  <style>
+    .container{
+      width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="margin-bottom: 20px;">
+      <button id="print-table">Print Table</button>
+      <button id="download-csv">Download CSV</button>
+      <button id="download-json">Download JSON</button>
+      <button id="download-xlsx">Download XLSX</button>
+      <button id="download-pdf">Download PDF</button>
+      <button id="download-html">Download HTML</button>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+      <select id="filter-field">
+        <option></option>
+        <option value="name">Name</option>
+        <option value="email">Email</option>
+        <option value="age">Age</option>
+      </select>
+    
+      <select id="filter-type">
+        <option value="=">=</option>
+        <option value="<"><</option>
+        <option value="<="><=</option>
+        <option value=">">></option>
+        <option value=">=">>=</option>
+        <option value="!=">!=</option>
+        <option value="like">like</option>
+      </select>
+    
+      <input id="filter-value" type="text" placeholder="value to filter">
+    
+    </div>
+
+    <div id="userTable"></div>
+  </div>
+
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.1/dist/js/tabulator.min.js"></script>
+  <script type="text/javascript" src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script>
+  <script src="tabulator.js"></script>
+</body>
+</html>
